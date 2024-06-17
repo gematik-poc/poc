@@ -1,6 +1,6 @@
 ---
 name: Industriekommentare
-description: "Kommentare für Änderungsvoschläge der Industrie"
+about: "Kommentare für Änderungsvoschläge der Industrie"
 title: "[Änderungsvorschlag]: "
 labels: "bug"
 assignees: 
