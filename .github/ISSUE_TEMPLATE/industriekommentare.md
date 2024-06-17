@@ -3,13 +3,13 @@ name: Industriekommentare
 about: Kommentare für Änderungsvoschläge der Industrie
 title: "[Änderungsvorschlag]: "
 labels: ["Fehler", "Verbesserung", "Ergänzung"]
-assignees: ''
+assignees: gematik
 body:
   - type: input
     id: Dokument
     attributes:
       label: Dokument
-      description: Name des Dokuments (erorderlich)
+      description: Name des Dokuments (erforderlich)
       placeholder:
     validations:
       required: true
@@ -38,7 +38,7 @@ body:
     id: Vorschlag
     attributes:
       label: Vorschlag
-      description: Ihr Änderungsvorschlag
+      description: Ihr Änderungsvorschlag (erforderlich)
     validations:
       required: true
 ---
