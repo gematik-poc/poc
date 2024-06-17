@@ -3,46 +3,44 @@ name: Industriekommentare
 about: "Kommentare für Änderungsvoschläge der Industrie"
 title: "[Änderungsvorschlag]: "
 labels: "bug"
-assignees: 
-  - gematik
+assignees: "gematik"
 body:
   - type: markdown
     attributes:
     value: "## Welcome!"
   - type: input
-    id: Dokument
+    id: document
     attributes:
-      label: Dokument
-      description: Name des Dokuments (erforderlich)
-      placeholder:
+      label: "Dokument"
+      description: "Name des Dokuments (erforderlich)"
     validations:
       required: true
   - type: input
-    id: Kapitel
+    id: chapter
     attributes:
-      label: Kapitel
-      description: Name des Kapitels im Dokument
+      label: "Kapitel"
+      description: "Name des Kapitels im Dokument"
     validations:
       required: false
   - type: input
-    id: AFO
+    id: afo
     attributes:
-      label: AFO
-      description: AFO im Dokument
+      label: "AFO"
+      description: "AFO im Dokument"
     validations:
       required: false
   - type: input
-    id: Zeilennr.
+    id: line
     attributes:
-      label: Zeilennr.
-      description: Zeilennr. im Dokument
+      label: "Zeilennr."
+      description: "Zeilennr. im Dokument"
     validations:
       required: false
   - type: textarea
-    id: Vorschlag
+    id: suggestion
     attributes:
-      label: Vorschlag
-      description: Ihr Änderungsvorschlag (erforderlich)
+      label: "Vorschlag"
+      description: "Ihr Änderungsvorschlag (erforderlich)"
     validations:
       required: true
 ---
