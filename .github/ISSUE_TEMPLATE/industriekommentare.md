@@ -1,48 +1,64 @@
----
-name: Industriekommentare
-about: "Kommentare für Änderungsvoschläge der Industrie"
-title: "[Änderungsvorschlag]: "
-labels: "Verbesserung"
-assignees: 
-  - gematik
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
   - type: input
-    id: document
+    id: contact
     attributes:
-      label: "Dokument"
-      description: "Name des Dokuments (erforderlich)"
-    validations:
-      required: true
-  - type: input
-    id: chapter
-    attributes:
-      label: "Kapitel"
-      description: "Name des Kapitels im Dokument"
-    validations:
-      required: false
-  - type: input
-    id: afo
-    attributes:
-      label: "AFO"
-      description: "AFO im Dokument"
-    validations:
-      required: false
-  - type: input
-    id: line
-    attributes:
-      label: "Zeilennr."
-      description: "Zeilennr. im Dokument"
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
     validations:
       required: false
   - type: textarea
-    id: suggestion
+    id: what-happened
     attributes:
-      label: "Vorschlag"
-      description: "Ihr Änderungsvorschlag (erforderlich)"
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
       required: true
----
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
