@@ -1,15 +1,26 @@
 name: Industriekommentare
 description: "Kommentare für Änderungsvoschläge der Industrie"
 title: "[Änderungsvorschlag]: "
-labels: "Verbesserung"
 assignees: 
-  - gematik
+  - mwatzek
 body:
   - type: markdown
     attributes:
       value: |
         Geben Sie hier die Daten für Ihren Verbesserungsvorschlag ein
-  - type: input
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Art der Änderung
+      description: Welcher Art ist Ihr Änderungsvorschlag 
+      options:
+        - Fehler
+        - Verbesserung
+        - Ergänzung
+      default: 0
+    validations:
+      required: true
+- type: input
     id: document
     attributes:
       label: "Dokument"
