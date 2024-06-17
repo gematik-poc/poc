@@ -43,6 +43,13 @@ body:
     validations:
       required: false
   - type: input
+    id: link
+    attributes:
+      label: "Link"
+      description: "Link zu Dokument/Kapitel/AFO"
+    validations:
+      required: false
+  - type: input
     id: line
     attributes:
       label: "Zeilennr."
