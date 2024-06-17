@@ -1,13 +1,15 @@
 ---
 name: Industriekommentare
-about: "Kommentare für Änderungsvoschläge der Industrie"
+description: "Kommentare für Änderungsvoschläge der Industrie"
 title: "[Änderungsvorschlag]: "
-labels: "bug"
-assignees: "gematik"
+labels: "Verbesserung"
+assignees: 
+  - gematik
 body:
   - type: markdown
     attributes:
-    value: "## Welcome!"
+      value: |
+        Thanks for taking the time to fill out this bug report!
   - type: input
     id: document
     attributes:
