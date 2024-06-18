@@ -2,6 +2,7 @@ name: Industriekommentare
 description: "Kommentare für Änderungsvoschläge der Industrie"
 title: "[Änderungsvorschlag]: "
 labels: Offen
+projects: "Kommentierungsverfahren"
 assignees: 
   - mwatzek
 body:
