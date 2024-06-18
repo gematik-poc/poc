@@ -1,7 +1,7 @@
 name: Industriekommentare
 description: "Kommentare für Änderungsvoschläge der Industrie"
 title: "[Änderungsvorschlag]: "
-projects: "orgs/gematik-poc/projects/1"
+projects: "gematik-poc/projects/1"
 assignees: 
   - mwatzek
 body:
