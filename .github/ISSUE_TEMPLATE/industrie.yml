@@ -2,7 +2,7 @@ name: Industriekommentare
 description: "Kommentare für Änderungsvoschläge der Industrie"
 title: "[Änderungsvorschlag]: "
 labels: ["Offen"]
-projects: ["Kommentierungsverfahren"]
+projects: ["gematik-poc/Kommentierungsverfahren"]
 assignees: ["mwatzek"]
 body:
   - type: markdown
