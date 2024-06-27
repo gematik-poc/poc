@@ -25,7 +25,7 @@ body:
     id: topic
     attributes:
       label: Thema
-      description: Wählen Sie die Fehlerkategorie Ihres Änderungsvorschlags aus 
+      description: Wählen Sie das Thema Ihres Änderungsvorschlags aus 
       options:
         - Alles auswählen
         - betrifft ePA
