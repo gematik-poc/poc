@@ -12,15 +12,27 @@ body:
   - type: dropdown
     id: kind
     attributes:
-      label: Art der Änderung
-      description: Welcher Art ist Ihr Änderungsvorschlag 
+      label: Fehlerkategorie
+      description: Wählen Sie die Fehlerkategorie Ihres Änderungsvorschlags aus 
       options:
-        - Fehler
-        - Verbesserung
-        - Ergänzung
+        - Alles auswählen
+        - FF
+        - M
       default: 0
     validations:
       required: true
+  - type: dropdown
+    id: topic
+    attributes:
+      label: Thema
+      description: Wählen Sie die Fehlerkategorie Ihres Änderungsvorschlags aus 
+      options:
+        - Alles auswählen
+        - betrifft ePA
+        - betrifft E-Rezept
+      default: 0
+    validations:
+      required: false
   - type: input
     id: document
     attributes:
@@ -59,7 +71,7 @@ body:
   - type: textarea
     id: suggestion
     attributes:
-      label: "Vorschlag"
-      description: "Ihr Änderungsvorschlag (erforderlich)"
+      label: "Änderungsvorschlag"
+      description: "Kommentar und Änderungsvorschlag (erforderlich)"
     validations:
       required: true
