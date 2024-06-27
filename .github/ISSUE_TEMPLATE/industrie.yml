@@ -16,7 +16,7 @@ body:
       description: "Name Ihrer Organisation (erforderlich)"
     validations:
       required: true
-- type: dropdown
+  - type: dropdown
     id: kind
     attributes:
       label: Fehlerkategorie
