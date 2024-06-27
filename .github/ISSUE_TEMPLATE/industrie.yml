@@ -9,7 +9,14 @@ body:
     attributes:
       value: |
         Geben Sie hier die Daten für Ihren Verbesserungsvorschlag ein
-  - type: dropdown
+  - type: input
+    id: organization
+    attributes:
+      label: "Organisation"
+      description: "Name Ihrer Organisation (erforderlich)"
+    validations:
+      required: true
+- type: dropdown
     id: kind
     attributes:
       label: Fehlerkategorie
@@ -69,7 +76,7 @@ body:
     validations:
       required: false
   - type: textarea
-    id: suggestion
+    id: proposal
     attributes:
       label: "Änderungsvorschlag"
       description: "Kommentar und Änderungsvorschlag (erforderlich)"
