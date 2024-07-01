@@ -15,7 +15,7 @@ body:
       label: "Organisation"
       description: "Name Ihrer Organisation (erforderlich)"
     validations:
-      required: true
+      required: false
   - type: dropdown
     id: kind
     attributes:
